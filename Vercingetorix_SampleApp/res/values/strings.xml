@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">Vercingetorix_SampleApp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Weather4cast</string>
+    <string name="City_name">Enter city name</string>
+    <string name="button_text">Search</string>
+    <string name="citynames">Display data for the following cities:</string>
+
+</resources>

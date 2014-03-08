@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+      <TextView
+        android:id="@+id/cityNameValue2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="CityName"
+        android:textColor="#040404"
+        android:textStyle="normal"
+        android:typeface="sans" />
+      
+      <TextView
+          android:id="@+id/slash"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_toRightOf="@id/cityNameValue2"
+          android:text="/" />
+      
+      <TextView
+        android:id="@+id/countryNameValue2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      	android:layout_toRightOf="@id/slash"
+        android:text="CountryName"
+        android:textColor="#040404"
+        android:textStyle="normal"
+        android:typeface="sans" />
+      
+      <ImageView 
+          android:id="@+id/celsius"
+          android:layout_width="15dp"
+          android:layout_height="15dp"
+          android:layout_alignParentRight="true"
+          android:layout_marginTop="3dp"
+          android:background="@drawable/degree_celsius"
+          />
+      
+      <TextView 
+          android:id="@+id/temp2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_toLeftOf="@id/celsius"
+          android:text="Temp" />
+      
+      <TextView
+          android:id="@+id/time"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/cityNameValue2"
+          android:layout_alignParentLeft="true"
+          android:text="time" />
+      
+      <TextView
+          android:id="@+id/temp4"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/temp2"
+          android:layout_alignParentRight="true"
+          android:text="Max" />
+      
+      <TextView
+          android:id="@+id/slash2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_toLeftOf="@id/temp4"
+          android:layout_alignTop="@id/temp4"
+          android:text="/" />
+      
+      <TextView
+          android:id="@+id/temp3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_toLeftOf="@id/slash2"
+          android:layout_alignTop="@id/slash2"
+          android:text="Min" />
+      
+      <TextView
+          android:id="@+id/day"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/time"
+          android:layout_alignParentLeft="true"
+          android:text="Day" />
+      
+      <TextView
+          android:id="@+id/comma"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_toRightOf="@id/day"
+          android:layout_alignTop="@id/day"
+          android:text="," />
+      
+      <TextView
+          android:id="@+id/date"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_toRightOf="@id/comma"
+          android:layout_alignTop="@id/comma"
+          android:text="Date" />
+      
+      <ImageView
+          android:id="@+id/image"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true"
+          android:layout_centerVertical="true" />
+      
+      <TextView
+          android:id="@+id/main"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignTop="@id/date"
+          android:layout_alignParentRight="true"
+          android:text="Main" />
+      
+      <TextView 
+          android:id="@+id/pres"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/day"
+          android:text="Pres" />
+      
+      <TextView 
+          android:id="@+id/pascal"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_toRightOf="@id/pres"
+          android:layout_alignTop="@id/pres"
+          android:text="Pa" />
+      
+      <TextView 
+          android:id="@+id/percent"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/main"
+          android:layout_alignParentRight="true"
+          android:text="%"/>
+      
+      <TextView 
+          android:id="@+id/hum"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_toLeftOf="@id/percent"
+          android:layout_alignTop="@id/percent"
+          android:text="Hum"/>
+      </RelativeLayout>

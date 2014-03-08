@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <!-- ListRow Left side Thumbnail image -->
+
+      <ImageView
+        android:id="@+id/weather_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:contentDescription="@string/app_name" /> 
+    <!-- City -->
+
+
+    <!-- Weather Information -->
+	
+	<TextView 
+	    android:id="@+id/comma2"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text=","/>
+	
+	<TextView 
+	    android:id="@+id/day2"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/comma2"
+        android:layout_alignTop="@id/comma2"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="day"/>
+	
+	<TextView 
+	    android:id="@+id/date2"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/comma2"
+        android:layout_alignTop="@id/comma2"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="date"/>
+	
+    <TextView
+        android:id="@+id/cityNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weather_icon"
+      	android:layout_alignParentLeft="true"
+        android:paddingLeft="5dp"
+        android:text="City"
+        android:textColor="#040404"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/cityNameValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      	android:layout_alignTop="@id/cityNameLabel"
+      	android:layout_toRightOf="@id/cityNameLabel"
+        android:paddingLeft="5dp"
+        android:text="CityName"
+        android:textColor="#040404"
+        android:textStyle="normal"
+        android:typeface="sans" />
+    
+    <TextView
+        android:id="@+id/countryNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/cityNameValue"
+        android:layout_alignTop="@id/cityNameValue"
+        android:paddingLeft="5dp"
+        android:text="Country"
+        android:textColor="#040404"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/countryNameValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      	android:layout_alignTop="@id/countryNameLabel"
+      	android:layout_toRightOf="@id/countryNameLabel"
+        android:paddingLeft="5dp"
+        android:text="CountryName"
+        android:textColor="#040404"
+        android:textStyle="normal"
+        android:typeface="sans" />
+    
+     <TextView
+        android:id="@+id/minTempLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cityNameLabel"
+      	android:layout_alignParentLeft="true"
+        android:paddingLeft="5dp"
+        android:text="Min Temp"
+        android:textColor="#040404"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/minTempValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      	android:layout_alignTop="@id/minTempLabel"
+      	android:layout_toRightOf="@id/minTempLabel"
+        android:paddingLeft="5dp"
+        android:text="Temp Value"
+        android:textColor="#040404"
+        android:textStyle="normal"
+        android:typeface="sans" />
+    
+    <TextView
+        android:id="@+id/maxTempLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/minTempValue"
+        android:layout_alignTop="@id/minTempValue"
+        android:paddingLeft="5dp"
+        android:text="Max Temp"
+        android:textColor="#040404"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/maxTempValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      	android:layout_alignTop="@id/maxTempLabel"
+      	android:layout_toRightOf="@id/maxTempLabel"
+        android:paddingLeft="5dp"
+        android:text="Temp Value"
+        android:textColor="#040404"
+        android:textStyle="normal"
+        android:typeface="sans" />
+    
+    <TextView
+        android:id="@+id/mornTempLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/minTempLabel"
+      	android:layout_alignParentLeft="true"
+        android:paddingLeft="5dp"
+        android:text="Morn Temp"
+        android:textColor="#040404"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/mornTempValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      	android:layout_alignTop="@id/mornTempLabel"
+      	android:layout_toRightOf="@id/mornTempLabel"
+        android:paddingLeft="5dp"
+        android:text="Temp Value"
+        android:textColor="#040404"
+        android:textStyle="normal"
+        android:typeface="sans" />
+    
+    <TextView
+        android:id="@+id/eveTempLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/mornTempValue"
+        android:layout_alignTop="@id/mornTempValue"
+        android:paddingLeft="5dp"
+        android:text="Eve Temp"
+        android:textColor="#040404"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/eveTempValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      	android:layout_alignTop="@id/eveTempLabel"
+      	android:layout_toRightOf="@id/eveTempLabel"
+        android:paddingLeft="5dp"
+        android:text="Temp Value"
+        android:textColor="#040404"
+        android:textStyle="normal"
+        android:typeface="sans" />
+    
+    <TextView
+        android:id="@+id/pressureLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mornTempLabel"
+      	android:layout_alignParentLeft="true"
+        android:paddingLeft="5dp"
+        android:text="Pressure"
+        android:textColor="#040404"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/pressureValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      	android:layout_alignTop="@id/pressureLabel"
+      	android:layout_toRightOf="@id/pressureLabel"
+        android:paddingLeft="5dp"
+        android:text="Pres Value"
+        android:textColor="#040404"
+        android:textStyle="normal"
+        android:typeface="sans" />
+    
+    <TextView
+        android:id="@+id/humidityLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/pressureValue"
+        android:layout_alignTop="@id/pressureValue"
+        android:paddingLeft="5dp"
+        android:text="Humidity"
+        android:textColor="#040404"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/humidityValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      	android:layout_alignTop="@id/humidityLabel"
+      	android:layout_toRightOf="@id/humidityLabel"
+        android:paddingLeft="5dp"
+        android:text="Hum Value"
+        android:textColor="#040404"
+        android:textStyle="normal"
+        android:typeface="sans" />
+    
+    <TextView
+        android:id="@+id/mainWeatherLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pressureLabel"
+      	android:layout_alignParentLeft="true"
+        android:paddingLeft="5dp"
+        android:text="Main"
+        android:textColor="#040404"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/mainWeatherValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      	android:layout_alignTop="@id/mainWeatherLabel"
+      	android:layout_toRightOf="@id/mainWeatherLabel"
+        android:paddingLeft="5dp"
+        android:text="Weather"
+        android:textColor="#040404"
+        android:textStyle="normal"
+        android:typeface="sans" />
+    
+    <TextView
+        android:id="@+id/descLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/mainWeatherValue"
+        android:layout_alignTop="@id/mainWeatherValue"
+        android:paddingLeft="5dp"
+        android:text="Description"
+        android:textColor="#040404"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/descValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      	android:layout_alignTop="@id/descLabel"
+      	android:layout_toRightOf="@id/descLabel"
+        android:paddingLeft="5dp"
+        android:text="desc"
+        android:textColor="#040404"
+        android:textStyle="normal"
+        android:typeface="sans" />
+
+</RelativeLayout>
